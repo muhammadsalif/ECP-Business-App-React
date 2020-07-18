@@ -3,9 +3,8 @@
   padding: 0px;
 }
 body {
-  background-color: #d9a552 !important;
-  background-image: url(images/background.png);
-
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #006b87 !important;
+  /* background-image: url(images/background.png); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }

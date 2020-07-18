@@ -76,6 +76,7 @@ export default function App() {
                 justifyContent: "center",
                 alignItems: "center",
                 margin: "0 auto",
+                paddingLeft: "2rem",
               }}
               item
               lg={6}
