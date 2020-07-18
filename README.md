@@ -11,7 +11,6 @@ Hosted Url: [https://ecpbusiness.surge.sh/]
 
 
 <p align="center"> 
-  <img src={![](./src/images/Frontpage.gif)}> </img>    
+  <img src="./src/images/Frontpage.gif"></img>    
 </p>
-
 
