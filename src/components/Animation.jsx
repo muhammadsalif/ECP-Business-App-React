@@ -16,7 +16,11 @@ function Animation() {
     >
       <img
         ref={ref}
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          //  height: "28rem",
+          height: "100%",
+        }}
         src={animation}
         alt="gif"
       />

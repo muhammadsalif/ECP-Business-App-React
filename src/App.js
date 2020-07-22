@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Animation from "./components/Animation";
 import NavigationBar from "./components/NavigationBar";
 import Text from "./components/Text";
+import RightDrawer from "./components/Drawer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,67 +28,96 @@ export default function App() {
 
   return (
     <React.Fragment>
-      <CssBaseline />
-      <Container
+      {/* <CssBaseline /> */}
+      {/* <Container
         style={{
-          height: "100vh",
+          // height: "100vh",
+          // border: "2px solid black",
+          flexWrap: "wrap",
+          // overflow: "hidden",
+          padding: "0px",
         }}
+        // maxWidth="sm"
+      > */}
+      {/* <div component="div" className={classes.root}> */}
+      <Grid
+        container
+        spacing={3}
+        style={{
+          width: "100%",
+          // height: "100vh",
+          // height: "100%",
+          padding: "0px",
+          margin: "0 auto",
+          // border: "2px solid red",
+          overflow: "hidden",
+        }}
+        xs={12}
+        md={9}
+        lg={10}
       >
-        <div component="div" className={classes.root}>
-          <Grid
-            container
-            spacing={3}
-            style={{
-              width: "100%",
-              height: "100%",
-              margin: "0 auto",
-            }}
-          >
-            <Grid
-              style={{
-                height: "100px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "0px",
-              }}
-              item
-              xs={12}
-            >
-              <NavigationBar></NavigationBar>
-            </Grid>
-            <Grid
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                margin: "0 auto",
-              }}
-              item
-              lg={6}
-              md={6}
-              xs={8}
-            >
-              <Animation></Animation>
-            </Grid>
-            <Grid
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                margin: "0 auto",
-                paddingLeft: "2rem",
-              }}
-              item
-              lg={6}
-              md={6}
-              xs={8}
-            >
-              <Text></Text>
-            </Grid>
-          </Grid>
-        </div>
-      </Container>
+        <Grid
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            // paddingBottom: "100px",
+            // paddingRight: "0px",
+            // paddingLeft: "0px",
+            // paddingTop: "10px",
+            // border: "2px solid wheat",
+            margin: "0px",
+            padding: "0px",
+            height: "20vh",
+            // width: "100%",
+          }}
+          item
+          xs={12}
+        >
+          <NavigationBar></NavigationBar>
+        </Grid>
+        <Grid
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "0 auto",
+            // border: "2px solid orange",
+            padding: "0px",
+            // height: "50%",
+            height: "80vh",
+          }}
+          item
+          lg={6}
+          md={6}
+          xs={11}
+          height="100%"
+        >
+          <Animation></Animation>
+        </Grid>
+        <Grid
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "0 auto",
+            // paddingLeft: "2rem",
+            // border: "2px solid white",
+            // height: "80vh",
+            flexWrap: "wrap",
+            overflowWrap: "break-word",
+          }}
+          item
+          lg={6}
+          md={6}
+          xs={11}
+        >
+          <Text></Text>
+        </Grid>
+      </Grid>
+      {/* </div> */}
+      {/* </Container> */}
+      <RightDrawer></RightDrawer>
     </React.Fragment>
   );
 }
