@@ -8,9 +8,10 @@ import useWebAnimations, { bounceInDown } from "@wellyshen/use-web-animations";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    border: "none",
     boxShadow: "0px",
     // backgroundColor: "transparent",
+    // border: "2px solid red",
+    margin: "0px",
   },
   menuButton: {
     marginRight: theme.spacing(2),
