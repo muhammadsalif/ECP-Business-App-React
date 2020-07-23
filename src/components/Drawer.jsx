@@ -2,11 +2,8 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -92,6 +89,24 @@ export default function RightDrawer() {
 
   return (
     <div className={classes.root}>
+      <CssBaseline />
+
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        edge="end"
+        onClick={handleDrawerOpen}
+        className={clsx(open && classes.hide)}
+        style={{
+          position: "absolute",
+          color: "white",
+          right: "150px",
+          top: "50px",
+        }}
+      >
+        <MenuIcon />
+      </IconButton>
+
       <Drawer
         className={classes.drawer}
         variant="persistent"

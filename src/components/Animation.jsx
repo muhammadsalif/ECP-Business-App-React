@@ -18,7 +18,6 @@ function Animation() {
         ref={ref}
         style={{
           width: "100%",
-          //  height: "28rem",
           height: "100%",
         }}
         src={animation}
