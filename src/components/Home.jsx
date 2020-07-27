@@ -4,6 +4,9 @@ import gif from "../images/ECP_Business.gif";
 import Animation from "./Animation";
 import Text from "./Text";
 import Grid from "@material-ui/core/Grid";
+import { bounceInRight, bounceInLeft } from "@wellyshen/use-web-animations";
+import useWebAnimations from "@wellyshen/use-web-animations";
+
 function Home() {
   const text =
     "Scalable extended business office services Staff Augmentation Innovative    and intelligent technology solutions and services Product Management    Customized solutions to meet the needs of the changing market";
@@ -25,7 +28,7 @@ function Home() {
         md={6}
         xs={11}
       >
-        <Text paragraph={text}></Text>
+        <Text paragraph={text} type={bounceInRight}></Text>
       </Grid>
 
       <Grid
@@ -43,7 +46,7 @@ function Home() {
         md={6}
         xs={11}
       >
-        <Animation gif={gif}></Animation>
+        <Animation gif={gif} type={bounceInLeft}></Animation>
       </Grid>
     </>
   );

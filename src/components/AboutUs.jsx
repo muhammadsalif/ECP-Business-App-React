@@ -5,6 +5,8 @@ import Animation from "./Animation";
 import gif from "../images/about.gif";
 import { Heading } from "./Heading";
 
+import { fadeInLeft, fadeInRight } from "@wellyshen/use-web-animations";
+
 export const AboutUs = () => {
   const text =
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus distinctio veritatis, iure quos dolores sit libero est tempore nam earum saepe! Quibusdam commodi unde tempore";
@@ -41,7 +43,7 @@ export const AboutUs = () => {
         md={6}
         xs={11}
       >
-        <Text paragraph={text}></Text>
+        <Text paragraph={text} type={fadeInLeft}></Text>
       </Grid>
       <Grid
         style={{
@@ -58,7 +60,7 @@ export const AboutUs = () => {
         md={6}
         xs={11}
       >
-        <Animation gif={gif}></Animation>
+        <Animation gif={gif} type={fadeInRight}></Animation>
       </Grid>
     </>
   );

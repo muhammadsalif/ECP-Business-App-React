@@ -1,9 +1,9 @@
 import React from "react";
-import useWebAnimations, { bounceInLeft } from "@wellyshen/use-web-animations";
+import useWebAnimations from "@wellyshen/use-web-animations";
 
-function Animation({ gif }) {
+function Animation({ gif, type }) {
   const { ref } = useWebAnimations({
-    ...bounceInLeft,
+    ...type,
   });
 
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "fontsource-roboto";
-import useWebAnimations, { bounceInRight } from "@wellyshen/use-web-animations";
+import useWebAnimations from "@wellyshen/use-web-animations";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Text({ paragraph }) {
+function Text({ paragraph, type }) {
   const classes = useStyles();
 
   const { ref } = useWebAnimations({
-    ...bounceInRight,
+    ...type,
   });
 
   return (
