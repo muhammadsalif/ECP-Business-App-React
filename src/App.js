@@ -4,10 +4,11 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import Animation from "./components/Animation";
 import NavigationBar from "./components/NavigationBar";
-import Text from "./components/Text";
+import Home from "./components/Home";
+
 // import RightDrawer from "./components/Drawer";
+import { AboutUs } from "./components/AboutUs";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,40 +67,9 @@ export default function App() {
           >
             <NavigationBar></NavigationBar>
           </Grid>
-          <Grid
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              margin: "0 auto",
-              // border: "2px solid orange",
-              padding: "0px",
-              height: "80vh",
-            }}
-            item
-            lg={6}
-            md={6}
-            xs={11}
-          >
-            <Animation></Animation>
-          </Grid>
-          <Grid
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              margin: "0 auto",
-              // border: "2px solid white",
-              flexWrap: "wrap",
-              overflowWrap: "break-word",
-            }}
-            item
-            lg={6}
-            md={6}
-            xs={11}
-          >
-            <Text></Text>
-          </Grid>
+
+          <Home></Home>
+          <AboutUs></AboutUs>
         </Grid>
       </Container>
     </React.Fragment>
