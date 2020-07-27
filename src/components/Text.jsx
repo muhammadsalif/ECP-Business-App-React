@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Text() {
+function Text({ paragraph }) {
   const classes = useStyles();
 
   const { ref } = useWebAnimations({
@@ -24,9 +24,7 @@ function Text() {
   return (
     <div>
       <h2 ref={ref} className={classes.heading}>
-        Scalable extended business office services Staff Augmentation Innovative
-        and intelligent technology solutions and services Product Management
-        Customized solutions to meet the needs of the changing market
+        {paragraph}
       </h2>
     </div>
   );

@@ -1,8 +1,7 @@
 import React from "react";
-import animation from "../images/ECP_Business.gif";
 import useWebAnimations, { bounceInLeft } from "@wellyshen/use-web-animations";
 
-function Animation() {
+function Animation({ gif }) {
   const { ref } = useWebAnimations({
     ...bounceInLeft,
   });
@@ -19,8 +18,9 @@ function Animation() {
         style={{
           width: "100%",
           height: "100%",
+          // backgroundColor: "red",
         }}
-        src={animation}
+        src={gif}
         alt="gif"
       />
     </div>
