@@ -5,7 +5,6 @@ import Animation from "./Animation";
 import Text from "./Text";
 import Grid from "@material-ui/core/Grid";
 import { bounceInRight, bounceInLeft } from "@wellyshen/use-web-animations";
-import useWebAnimations from "@wellyshen/use-web-animations";
 
 function Home() {
   const text =
