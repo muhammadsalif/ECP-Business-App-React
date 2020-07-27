@@ -1,20 +1,20 @@
 import React from "react";
+
 import Grid from "@material-ui/core/Grid";
 import Text from "./Text";
 import Animation from "./Animation";
-import gif from "../images/about.gif";
+import gif from "../images/services.gif";
 import { Heading } from "./Heading";
 
 import {
   fadeInLeft,
   fadeInRight,
-  fadeInUp,
+  bounceInDown,
 } from "@wellyshen/use-web-animations";
 
-export const AboutUs = () => {
+function Services() {
   const text =
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus distinctio veritatis, iure quos dolores sit libero est tempore nam earum saepe! Quibusdam commodi unde tempore";
-
+    "Lorem ipsum dolor sit, Doloribus distinctio veritatis, iure quos dolores sit libero est tempore nam earum saepe!";
   return (
     <>
       {" "}
@@ -29,7 +29,7 @@ export const AboutUs = () => {
         item
         xs={12}
       >
-        <Heading heading="About Us" type={fadeInUp}></Heading>
+        <Heading heading="Services" type={bounceInDown}></Heading>
       </Grid>
       <Grid
         style={{
@@ -47,7 +47,7 @@ export const AboutUs = () => {
         md={6}
         xs={11}
       >
-        <Text paragraph={text} type={fadeInLeft}></Text>
+        <Animation gif={gif} type={fadeInLeft}></Animation>
       </Grid>
       <Grid
         style={{
@@ -64,8 +64,10 @@ export const AboutUs = () => {
         md={6}
         xs={11}
       >
-        <Animation gif={gif} type={fadeInRight}></Animation>
+        <Text paragraph={text} type={fadeInRight}></Text>
       </Grid>
     </>
   );
-};
+}
+
+export default Services;

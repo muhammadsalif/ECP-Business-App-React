@@ -9,6 +9,7 @@ import Home from "./components/Home";
 
 // import RightDrawer from "./components/Drawer";
 import { AboutUs } from "./components/AboutUs";
+import Services from "./components/Services";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -70,6 +71,7 @@ export default function App() {
 
           <Home></Home>
           <AboutUs></AboutUs>
+          <Services></Services>
         </Grid>
       </Container>
     </React.Fragment>

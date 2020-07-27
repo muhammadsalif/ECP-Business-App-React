@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     boxShadow: "0px",
+    borderBottom: "4px solid #000",
     // backgroundColor: "transparent",
     // border: "2px solid red",
     margin: "0px",
@@ -19,7 +20,12 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     // color: "#E7B757",
-    fontSize: "2rem",
+    // fontSize: "2rem",
+
+    // color: "white",
+    fontSize: "2.5rem",
+    // borderBottom: "6px solid #000",
+    // borderRadius: "30%",
   },
   appbar: {
     backgroundColor: "transparent",
