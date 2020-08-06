@@ -26,6 +26,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2.5rem",
     // borderBottom: "6px solid #000",
     // borderRadius: "30%",
+    cursor: "pointer",
+    transition: "0.3s linear",
+    "&:hover": {
+      // backgroundColor: "red",
+      transform: "scale(1.05)",
+    },
   },
   appbar: {
     backgroundColor: "transparent",
@@ -55,6 +61,8 @@ export default function NavigationBar() {
           style={{
             fontSize: "1.2rem",
             padding: "2px 15px 2px 15px",
+
+            transition: "0.3s linear",
           }}
           color="inherit"
         >

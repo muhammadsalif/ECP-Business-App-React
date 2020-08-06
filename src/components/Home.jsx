@@ -19,8 +19,8 @@ function Home() {
           alignItems: "center",
           margin: "0 auto",
           // border: "2px solid orange",
-          padding: "0px",
-          height: "80vh",
+          padding: "3rem 0",
+          // height: "80vh",
         }}
         item
         lg={6}
@@ -38,6 +38,7 @@ function Home() {
           margin: "0 auto",
           // border: "2px solid white",
           flexWrap: "wrap",
+          padding: "3rem 0",
           overflowWrap: "break-word",
         }}
         item

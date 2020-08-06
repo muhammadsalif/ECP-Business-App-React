@@ -24,7 +24,8 @@ function Services() {
           justifyContent: "center",
           alignItems: "center",
           // border: "2px solid white",
-          height: "20vh",
+          // height: "20vh",
+          padding: "4rem 0",
         }}
         item
         xs={12}
@@ -40,7 +41,8 @@ function Services() {
           // border: "2px solid white",
           flexWrap: "wrap",
           overflowWrap: "break-word",
-          height: "80vh",
+          // height: "80vh",
+          padding: "3rem 0",
         }}
         item
         lg={6}
@@ -56,8 +58,8 @@ function Services() {
           alignItems: "center",
           margin: "0 auto",
           // border: "2px solid orange",
-          padding: "0px",
-          height: "80vh",
+          // height: "80vh",
+          padding: "3rem 0",
         }}
         item
         lg={6}

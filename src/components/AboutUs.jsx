@@ -23,8 +23,9 @@ export const AboutUs = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          padding: "4rem 0",
           // border: "2px solid white",
-          height: "20vh",
+          // height: "20vh",
         }}
         item
         xs={12}
@@ -40,7 +41,8 @@ export const AboutUs = () => {
           // border: "2px solid white",
           flexWrap: "wrap",
           overflowWrap: "break-word",
-          height: "80vh",
+          padding: "3rem 0",
+          // height: "80vh",
         }}
         item
         lg={6}
@@ -55,9 +57,9 @@ export const AboutUs = () => {
           justifyContent: "center",
           alignItems: "center",
           margin: "0 auto",
-          // border: "2px solid orange",
-          padding: "0px",
-          height: "80vh",
+          // border: "2px dotted orange",
+          // height: "80vh",
+          padding: "3rem 0",
         }}
         item
         lg={6}

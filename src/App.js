@@ -10,6 +10,7 @@ import Home from "./components/Home";
 // import RightDrawer from "./components/Drawer";
 import { AboutUs } from "./components/AboutUs";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -74,6 +75,7 @@ export default function App() {
           <Services></Services>
         </Grid>
       </Container>
+      <Footer></Footer>
     </React.Fragment>
   );
 }
