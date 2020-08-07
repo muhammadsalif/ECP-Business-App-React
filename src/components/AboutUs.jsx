@@ -29,6 +29,7 @@ export const AboutUs = () => {
         }}
         item
         xs={12}
+        id="aboutUs"
       >
         <Heading heading="About Us" type={fadeInUp}></Heading>
       </Grid>

@@ -5,6 +5,18 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import useWebAnimations, { bounceInDown } from "@wellyshen/use-web-animations";
+
+// scroll
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -57,41 +69,87 @@ export default function NavigationBar() {
         <Typography variant="h6" className={classes.title}>
           Business Technologies
         </Typography>
-        <Button
-          style={{
-            fontSize: "1.2rem",
-            padding: "2px 15px 2px 15px",
 
-            transition: "0.3s linear",
-          }}
-          color="inherit"
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
         >
-          Home
-        </Button>
-        <Button
-          style={{ fontSize: "1.2rem", padding: "2px 15px 2px 15px" }}
-          color="inherit"
+          <Button
+            style={{
+              fontSize: "1.2rem",
+              padding: "2px 15px 2px 15px",
+
+              transition: "0.3s linear",
+            }}
+            color="inherit"
+          >
+            Home
+          </Button>
+        </Link>
+        <Link
+          activeClass="active"
+          to="aboutUs"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
         >
-          About Us
-        </Button>
-        <Button
-          style={{ fontSize: "1.2rem", padding: "2px 15px 2px 15px" }}
-          color="inherit"
+          <Button
+            style={{
+              fontSize: "1.2rem",
+              padding: "2px 15px 2px 15px",
+
+              transition: "0.3s linear",
+            }}
+            color="inherit"
+          >
+            About Us
+          </Button>
+        </Link>
+        <Link
+          activeClass="active"
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
         >
-          Services
-        </Button>
-        <Button
-          style={{ fontSize: "1.2rem", padding: "2px 15px 2px 15px" }}
-          color="inherit"
+          <Button
+            style={{
+              fontSize: "1.2rem",
+              padding: "2px 15px 2px 15px",
+
+              transition: "0.3s linear",
+            }}
+            color="inherit"
+          >
+            Services
+          </Button>
+        </Link>
+        <Link
+          activeClass="active"
+          to="footer"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
         >
-          Career
-        </Button>
-        <Button
-          style={{ fontSize: "1.2rem", padding: "2px 15px 2px 15px" }}
-          color="inherit"
-        >
-          Contact
-        </Button>
+          <Button
+            style={{
+              fontSize: "1.2rem",
+              padding: "2px 15px 2px 15px",
+
+              transition: "0.3s linear",
+            }}
+            color="inherit"
+          >
+            Contact Us
+          </Button>
+        </Link>
       </Toolbar>
       {/* </AppBar> */}
     </div>

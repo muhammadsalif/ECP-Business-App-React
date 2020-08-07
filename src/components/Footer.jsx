@@ -31,6 +31,7 @@ export default function Footer() {
         container
         // className="border"
         style={{ height: "40vh", width: "80%", margin: "0 auto" }}
+        id="footer"
       >
         {/*  */}
         <Grid

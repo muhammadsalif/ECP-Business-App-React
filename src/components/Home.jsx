@@ -26,6 +26,7 @@ function Home() {
         lg={6}
         md={6}
         xs={11}
+        id="home"
       >
         <Text paragraph={text} type={bounceInRight}></Text>
       </Grid>

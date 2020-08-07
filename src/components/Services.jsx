@@ -29,6 +29,7 @@ function Services() {
         }}
         item
         xs={12}
+        id="services"
       >
         <Heading heading="Services" type={bounceInDown}></Heading>
       </Grid>
