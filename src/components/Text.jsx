@@ -2,6 +2,7 @@ import React from "react";
 import "fontsource-roboto";
 import useWebAnimations from "@wellyshen/use-web-animations";
 import { makeStyles } from "@material-ui/core/styles";
+import Typist from "react-typist";
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -24,7 +25,7 @@ function Text({ paragraph, type }) {
   return (
     <div>
       <h2 ref={ref} className={classes.heading}>
-        {paragraph}
+        <Typist>{paragraph}</Typist>
       </h2>
     </div>
   );
