@@ -6,8 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import useWebAnimations, { bounceInDown } from "@wellyshen/use-web-animations";
 
-// scroll
-
 import {
   Link,
   // Element,
@@ -66,7 +64,11 @@ export default function NavigationBar() {
     <div className={classes.root}>
       {/* <AppBar ref={ref} position="static" className={classes.appbar}> */}
       <Toolbar ref={ref} className={classes.toolbar}>
-        <Typography variant="h6" className={classes.title}>
+        <Typography
+          variant="h6"
+          className={classes.title}
+          onClick={() => (window.location.href = "/")}
+        >
           Business Technologies
         </Typography>
 
