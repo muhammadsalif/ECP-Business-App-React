@@ -54,6 +54,9 @@ export default function Footer() {
                 cursor: "pointer",
                 color: "white",
               }}
+              onClick={() =>
+                (window.location.href = "https://www.instagram.com")
+              }
             ></InstagramIcon>
             <FacebookIcon
               style={{
@@ -61,6 +64,9 @@ export default function Footer() {
                 cursor: "pointer",
                 color: "white",
               }}
+              onClick={() =>
+                (window.location.href = "https://www.facebook.com")
+              }
             ></FacebookIcon>
             <WhatsAppIcon
               style={{
@@ -68,6 +74,9 @@ export default function Footer() {
                 cursor: "pointer",
                 color: "white",
               }}
+              onClick={() =>
+                (window.location.href = "https://www.whatsapp.com")
+              }
             ></WhatsAppIcon>
             <TwitterIcon
               style={{
@@ -75,6 +84,7 @@ export default function Footer() {
                 cursor: "pointer",
                 color: "white",
               }}
+              onClick={() => (window.location.href = "https://www.twitter.com")}
             ></TwitterIcon>
           </Paper>
         </Grid>

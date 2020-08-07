@@ -7,14 +7,14 @@ import Button from "@material-ui/core/Button";
 import useWebAnimations, { bounceInDown } from "@wellyshen/use-web-animations";
 
 // scroll
-import * as Scroll from "react-scroll";
+
 import {
   Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
+  // Element,
+  // Events,
+  // animateScroll as scroll,
+  // scrollSpy,
+  // scroller,
 } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({

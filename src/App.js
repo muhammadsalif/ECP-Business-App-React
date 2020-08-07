@@ -6,11 +6,18 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import NavigationBar from "./components/NavigationBar";
 import Home from "./components/Home";
-
+import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 // import RightDrawer from "./components/Drawer";
 import { AboutUs } from "./components/AboutUs";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+
+import { animateScroll as scroll } from "react-scroll";
+import Button from "@material-ui/core/Button";
+
+function scrollToTop() {
+  scroll.scrollToTop();
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -76,6 +83,24 @@ export default function App() {
         </Grid>
       </Container>
       <Footer></Footer>
+      <Button
+        onClick={scrollToTop}
+        style={{
+          position: "fixed",
+          right: "10px",
+          bottom: "10px",
+          borderRadius: "3rem",
+          backgroundColor: "#212733",
+          color: "white",
+          // scrollBehavior: "smooth",
+        }}
+      >
+        <ExpandLessIcon
+          style={{
+            fontSize: "2rem",
+          }}
+        ></ExpandLessIcon>
+      </Button>
     </React.Fragment>
   );
 }
